@@ -15,7 +15,7 @@
   .CabeçalhoFlex {
     border: 3px solid #fce6a8;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem;
     grid-column: 1 / 4;
@@ -24,7 +24,17 @@
   .CabeçalhoFlex > button {
     background-color: #788896;
     color: white;
-    }
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 3px;
+  }
+
+  .CabeçalhoFlex > div {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+  }
   
   .PrincipalFlex {
     border: 3px solid #fce6a8;
