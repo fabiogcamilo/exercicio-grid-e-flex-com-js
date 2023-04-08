@@ -9,41 +9,46 @@
     <script src="js.js"></script>
 </head>
 
-<body class="GridContainer">
-    
-    <header class="CabeçalhoFlex">
-    
-    <button>Principal</button>
-    <button>Contato</button>
-    <div class="Treinando">Treinando</div>
-    
-    </header>
-    
-    <main class="PrincipalFlex">
-        
-        <div class="soma">
-        <input type="text" placeholder="Digite um número"><br>
-        <input type="text" placeholder="Digite um número"><br>
-        <button>Somar</button>
-        <div class="resultadosoma">Resultado</div>
-        </div>
-        
-    
+<body>
 
-        <div class="pokemon">
-            <input type="text" placeholder="ID Pokemon"><br>
-            <button>Buscar</button>
-            <div>
-                Nome:
-                <img class="imagempokemon" src="" alt="">
+    <div class="cabecalhoSecundario secao-layout">
+        <nav class="cabecalhoSecundario__menu">
+            <a href="">Principal</a>
+            <a href="">Contato</a>
+        </nav>
+    </div>
+
+    <header class="cabecalhoPrincipal secao-layout">
+        <h1>Treinando</h1>
+    </header>
+
+    <main class="conteudoPrincipal secao-layout">
+        <div class="card-exercicio">
+            <div class="entradas">
+                <input id="primeiroInput" placeholder="Digite um número" type="text" name="" id="">
+                <input id="segundoInput" placeholder="Digite um número" type="text" name="" id="">
+                <button onclick="executarSoma()" class="botaoPrincipal">Somar</button>
+            </div>
+            <div class="saidas" id="saidaExterna">
+                Resultado: <span id="resultadoSoma">0</span>
+
+                <div id="toast">DEU ERRO!</div>
             </div>
         </div>
-
+        <div class="card-exercicio">
+            <div class="entradas">
+                <input id="idPokemon" placeholder="ID Pokemon" type="text" name="">
+                <button onclick="executarPokemon()" class="botaoPrincipal">Buscar</button>
+            </div>
+            <div class="saidas">
+                Nome: <span id="nomePokemon">-</span>
+                <img id="imagemPokemon" src="" alt="Imagem do pokemon">
+            </div>
+        </div>
     </main>
-    
-    <footer class="RodapeFlex">
-        Construido por:
-        <a href="https://www.linkedin.com/in/fabiogcamilo/">Fabio Camilo</a>
+
+    <footer class="rodape secao-layout">
+        Construído por Sabino
     </footer>
 </body>
 </html>
