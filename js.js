@@ -26,6 +26,8 @@ function executarSoma() {
         document.getElementById("nomePokemon").textContent = nomePokemon;
         document.getElementById("imagemPokemon").src = imagemPokemon;
       })
+
+      //Retorna erro no console
       .catch(error => {
         console.error(error);
       });
